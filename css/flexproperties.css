@@ -1,0 +1,36 @@
+body {
+    background-color: lightseagreen;
+    /* NOTE - 'height:100%' does not allow align-items to properly execute (below): */
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: grey;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* NOTE - .child & .odd-duck delcartions below for 'flex-shrink' example. */
+
+/* .child {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    outline: white dotted 1px;
+    height: 75px;
+    width: 275px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.odd-duck {
+    flex-shrink: 3;
+} */
