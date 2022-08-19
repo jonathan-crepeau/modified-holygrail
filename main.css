@@ -5,13 +5,13 @@
 
 body {
     height: 100vh;
-    background-color: lightpink;
+    background-color: #CDC7B8;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: white;
+    background-color: #9C96B2;
     width: 100vw;
     height: 40px;
     line-height: 40px;
@@ -37,14 +37,37 @@ header {
 
 .holy-nav {
     order: -1;
+    background-color: #E1D490;
 }
 
+.holy-aside {
+    background-color: #F97F8C;
+}
 
 footer {
-    background-color: white;
+    background-color: #9C96B2;
     width: 100vw;
     height: 40px;
     line-height: 40px;
     font-size: 1.6rem;
     text-align: center;
+}
+
+
+
+/* ANCHOR - Media Queries */
+
+@media screen and (max-width: 600px) {
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .holy-main {
+        order: -1;
+    }
+
+    .holy-nav, .holy-aside {
+        flex: 0 0 2.3rem;
+    }
 }
