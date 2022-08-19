@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    width: 100vw;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+}
+
+.holy-main {
+    flex: 1;
+    text-align: center;
+}
+
+.holy-nav, .holy-aside {
+    flex: 0 0 12em;
+    outline: 1px black dotted;
+    text-align: center;
+}
+
+.holy-nav {
+    order: -1;
+}
+
+
+footer {
+    background-color: white;
+    width: 100vw;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.6rem;
+    text-align: center;
+}
